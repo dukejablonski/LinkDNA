@@ -28,9 +28,9 @@ public class DNABenchmark {
 	 * Change these to change the tests to
 	 * use a different type
 	 */
-//	private static final String strandType = "StringStrand";
+	private static final String strandType = "StringStrand";
 //	private static final String strandType = "LinkStrand";
-	private static final String strandType = "StringBuilderStrand";
+	//private static final String strandType = "StringBuilderStrand";
 	
 	private static final String ENZYME = "gaattc";
 	private static final int TRIALS = 2;
@@ -160,7 +160,7 @@ public class DNABenchmark {
 		System.out.printf("Class\t%23s\t%12s\ttime\t%s\n", "splicee", "recomb","appends");
 		System.out.println("-----");
 
-		standardBenchmark();
+		newBenchmark();
 		System.exit(0);
 	}
 }
